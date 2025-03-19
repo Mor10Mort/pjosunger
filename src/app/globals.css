@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fcf6ea;
-  --foreground: #171717;
+  --background: #fcf6ea; /* Light mode background */
+  --foreground: #171717; /* Light mode text color */
+  --highlight: #ffffff; /* Highlight text color for better visibility */
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0a0a0a; /* Dark mode background */
+    --foreground: #ededed; /* Dark mode text color */
+    --highlight: #ffffff; /* Ensure light color for visibility in dark mode */
   }
 }
 
@@ -17,4 +18,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5; /* Improve text readability */
 }
+
+h1, h2, h3, p {
+  color: var(--foreground); /* Ensure that headings and paragraphs use the appropriate text color */
+}
+
+a {
+  color: var(--highlight); /* Links to stand out with highlight color */
+}
+
+/* You can also add styles for specific sections to ensure they remain readable */
