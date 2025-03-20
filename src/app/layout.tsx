@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Pjosunger - En Jalla Tegneserie",
-  description: "Denne serien eksisterer rett og slett fordi den kan, og ingen vet helt hvorfor.",
+  description: "En gratis tegneserie som eksisterer rett og slett fordi den kan, og ingen vet helt hvorfor.",
 };
 
 export default function RootLayout({
