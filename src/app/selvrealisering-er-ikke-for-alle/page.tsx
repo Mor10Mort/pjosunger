@@ -4,7 +4,7 @@ import WebcomicHeader from "../components/WebcomicHeader";
 
 export default function WebcomicPage() {
     return (
-        <main className="flex flex-col items-center bg-gray-100 min-h-screen py-10">
+        <main className="min-h-screen flex flex-col items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
             {/* Use WebcomicHeader component */}
             <WebcomicHeader
                 title="Selvrealisering er ikke for alle"
